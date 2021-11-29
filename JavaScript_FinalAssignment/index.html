@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style/css-style.css">
+    <script src="Script/javascript.js"></script>
+</head>
+<body>
+    <p style="font-size: 30px;"><b>Submit your application</b> </p>
+        
+    <p style="font-size: 25px;"> <blockquote><b>for .NET Developer(Fresher)</b></blockquote> </p>
+   
+
+    <form id="Form">
+        <label for="name">Name as per ID proof*</label>
+         <br>
+        <input type="text" name="Name" id="name" >
+        <label for="nametext" id="InvalidName" style="color: red;visibility: hidden;">Name is required</label> 
+         <br>
+        <label for="fname">Father's Name*</label>
+          <br>
+        <input type="fname" name="fname" id="fname">
+        <label for="fathertext" id="InvalidFname" style="color: red;visibility: hidden;">Father's name is required</label>
+        <label for="nametext" id="InvalidFname1" style="color: red;visibility: hidden;">Please enter in valid format</label> 
+        <br>
+        <label for="mail">Email*</label>
+        <br>
+        <input type="mail" name="mail" id="mail">
+        <label for="mailtext" id="InvalidEmail" style="color: red;visibility: hidden;">Email is required</label> 
+        <label for="nametext" id="InvalidEmail1" style="color: red;visibility: hidden;">Enter valid email</label> 
+        <br>
+        <label for="dob">Date of Birth*</label>
+         <br>
+        <input type="text" name="dob" id="dob">
+        <label for="dobtext" id="InvalidDob" style="color: red;visibility: hidden;">DOB is required</label>
+        <label for="nametext" id="InvalidDob1" style="color: red;visibility: hidden;">Enter a valid format(DD-MM-YY)</label> 
+        
+         <br>
+        <label for="number">Mobile No*</label> 
+         <br>
+        <input type="text" name="number" id="number">
+        <label for="numbertext" id="InvalidMoile" style="color: red;visibility: hidden;">Mobile number is required</label> 
+        <label for="nametext" id="InvalidMobile1" style="color: red;visibility: hidden;">Enter only 10 digits number</label> 
+        
+        <br>
+        <label for="CurrentAddress" >Current Address*</label> <br>
+        <form action="">
+            <input type="text" name="address1" id="address1" placeholder="Address Line 1"> 
+            <label for="a1text" id="InvalidA1" style="color: red;visibility: hidden;">Address is required</label> <br>
+            <input type="text" name="address1" id="address2" placeholder="Address Line 2">
+            <label for="a1text" id="InvalidA2" style="color: red;visibility: hidden;">Address is required</label> <br>
+            <input type="text" name="city" id="city" placeholder="City"> 
+            <label for="citytext" id="Invalidcity" style="color: red;visibility: hidden;">City is required</label> <br>
+            <select name="state" id="state">
+                
+                <option value="tamilnadu">Tamil Nadu</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Telugana">Telugana</option>
+                <option value="Andhra">Andhra</option>
+            </select>
+            <br>
+            <input type="text" name="pincode" id="pincode"placeholder="pincode"> 
+            <label for="pintext" id="InvalidPin" style="color: red;visibility: hidden;">Pincode is required</label> 
+            <label for="pintext" id="InvalidPin1" style="color: red;visibility: hidden;">Invalid format</label> 
+        </form>
+        <label for="Permanent Address" >Permanent Address*</label> 
+        <input type="checkbox" name="sameaddress" id="address">Same as Current Address
+        <form action="">
+            <input type="text" name="address1" id="address1" placeholder="Address Line 1"> <br>
+            <input type="text" name="city" id="city" placeholder="City">
+            <label for="citytext" id="Invalidcity" style="color: red;visibility: hidden;">City is required</label>  <br>
+            <select name="state" id="state">
+                <option value="Tamilnadu">Tamil Nadu</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Telugana">Telugana</option>
+                <option value="Andhra">Andhra</option>
+            </select> <br>
+            <input type="number" name="pincode" id="pincode" placeholder="pincode">
+           
+             <br>
+            
+        </form>
+        <p>Upload Profile Photo*(JPG/PNG format only)</p>
+            <p>Please upload a photo of yourself.Your face should be clearly visible.Make sure the image size does not exceed 500KB</p>
+            <input type="file" name="photo" id="photo" placeholder="UPLOAD PHOTO">Upload your profile photo
+        <label for="phototext" id="Invalid" style="color: red;visibility: hidden;">Enter a required field</label> <br>
+        <br>
+        <button type="submit" name="submit" id="submit" placeholder="Submit" onclick="fn1()">Submit</button> 
+    </form>
+</body>
+</html>
